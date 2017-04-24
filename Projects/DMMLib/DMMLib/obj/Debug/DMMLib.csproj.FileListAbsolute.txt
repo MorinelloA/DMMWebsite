@@ -1,0 +1,7 @@
+C:\Users\laptop\Documents\Visual Studio 2015\Projects\DMMLib\DMMLib\bin\Debug\DMMLib.dll
+C:\Users\laptop\Documents\Visual Studio 2015\Projects\DMMLib\DMMLib\bin\Debug\DMMLib.pdb
+C:\Users\laptop\Documents\Visual Studio 2015\Projects\DMMLib\DMMLib\obj\Debug\DMMLib.dll
+C:\Users\laptop\Documents\Visual Studio 2015\Projects\DMMLib\DMMLib\obj\Debug\DMMLib.pdb
+C:\Users\laptop\Documents\Visual Studio 2015\Projects\DMMLib\DMMLib\bin\Debug\Newtonsoft.Json.dll
+C:\Users\laptop\Documents\Visual Studio 2015\Projects\DMMLib\DMMLib\bin\Debug\Newtonsoft.Json.xml
+C:\Users\laptop\Documents\Visual Studio 2015\Projects\DMMLib\DMMLib\obj\Debug\DMMLib.csprojResolveAssemblyReference.cache

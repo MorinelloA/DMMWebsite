@@ -1,0 +1,53 @@
+﻿body {
+    font-family: Helvetica;
+    background-color: lightgray;
+}
+
+.boys{
+    background-color:lightblue;
+}
+
+.girls{
+    background-color:lightpink;
+}
+
+.place{
+    width:75px;
+}
+
+.name{
+    width:150px;
+}
+
+.school{
+    width:100px;
+}
+
+.performance{
+    width:100px;
+}
+
+.CustomWidth {
+    width: 100%;
+}
+
+.Panel{
+}
+
+table{
+    width: 425px;
+    table-layout: fixed;
+}
+
+td{
+    border-bottom-style:ridge;
+}
+
+.Button{
+    border-style:solid;
+    background-color:sandybrown;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    width: 130px;
+}

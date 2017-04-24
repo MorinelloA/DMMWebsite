@@ -1,0 +1,99 @@
+﻿body {
+    font-family: Helvetica;
+    background-color: palegoldenrod;
+}
+
+.boys{
+    background-color:lightblue;
+}
+
+p
+{
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+}
+
+a:link
+{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited
+{
+    color: black;
+}
+
+a:hover
+{
+    color: red;
+}
+
+a:active
+{
+    color: red;
+}
+
+.girls{
+    background-color:lightpink;
+}
+
+.place{
+    width:75px;
+}
+
+.name{
+    width:150px;
+}
+
+.school{
+    width:100px;
+}
+
+.performance{
+    width:100px;
+}
+
+.CustomWidth {
+    width: 100%;
+}
+
+.Panel{
+    width: 100%;
+}
+
+table{
+    vertical-align: top;
+    table-layout: fixed;
+    width: 100%;
+}
+
+tr{
+    width: 100%;
+}
+
+td{
+}
+
+.Button{
+    border-style:solid;
+    background-color:sandybrown;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    width: 130px;
+}
+
+#scoresTD{
+    width: 70%;
+    text-align: center;
+    vertical-align: top;
+    background-color: whitesmoke;
+}
+
+#menuTD{
+    width: 30%;
+    vertical-align: top;
+    background-color: palegoldenrod;
+}
