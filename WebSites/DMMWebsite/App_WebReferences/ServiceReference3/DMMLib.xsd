@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/DMMLib" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DMMLib" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="Meet">
+    <xs:sequence>
+      <xs:element name="_x003C_dateOfMeet_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_location_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="_x003C_performances_x003E_k__BackingField" nillable="true" type="q1:ArrayOfKeyValueOfstringArrayOfPerformanceQXneFrGS" />
+      <xs:element name="_x003C_schoolNames_x003E_k__BackingField" nillable="true" type="tns:Teams" />
+      <xs:element name="_x003C_weatherConditions_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Meet" nillable="true" type="tns:Meet" />
+  <xs:complexType name="ArrayOfPerformance">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Performance" nillable="true" type="tns:Performance" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPerformance" nillable="true" type="tns:ArrayOfPerformance" />
+  <xs:complexType name="Performance">
+    <xs:sequence>
+      <xs:element name="_x003C_athleteName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_heatNum_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_performance_x003E_k__BackingField" type="xs:decimal" />
+      <xs:element name="_x003C_schoolName_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Performance" nillable="true" type="tns:Performance" />
+  <xs:complexType name="Teams">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="_x003C_boySchoolNames_x003E_k__BackingField" nillable="true" type="q2:ArrayOfKeyValueOfstringstring" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="_x003C_girlSchoolNames_x003E_k__BackingField" nillable="true" type="q3:ArrayOfKeyValueOfstringstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Teams" nillable="true" type="tns:Teams" />
+</xs:schema>

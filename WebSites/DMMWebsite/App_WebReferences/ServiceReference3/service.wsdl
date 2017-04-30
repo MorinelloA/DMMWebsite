@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/DMMLib" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/DMMWCFLib" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AuthenticateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AuthenticateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddMeet_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddMeet" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddMeet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddMeetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_FindMeetId_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindMeetId" />
+  </wsdl:message>
+  <wsdl:message name="IService1_FindMeetId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindMeetIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_FindMeet_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindMeet" />
+  </wsdl:message>
+  <wsdl:message name="IService1_FindMeet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindMeetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteMeet_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMeet" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteMeet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMeetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddBoysTeam_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddBoysTeam" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddBoysTeam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddBoysTeamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_FindBoysTeam_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindBoysTeam" />
+  </wsdl:message>
+  <wsdl:message name="IService1_FindBoysTeam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindBoysTeamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteBoysTeam_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBoysTeam" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteBoysTeam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBoysTeamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddGirlsTeam_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddGirlsTeam" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddGirlsTeam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddGirlsTeamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_FindGirlsTeam_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindGirlsTeam" />
+  </wsdl:message>
+  <wsdl:message name="IService1_FindGirlsTeam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindGirlsTeamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteGirlsTeam_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteGirlsTeam" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteGirlsTeam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteGirlsTeamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddPerformances_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPerformances" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddPerformances_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPerformancesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddPerformance_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPerformance" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddPerformance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPerformanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_FindPerformancesDictionary_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindPerformancesDictionary" />
+  </wsdl:message>
+  <wsdl:message name="IService1_FindPerformancesDictionary_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindPerformancesDictionaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_FindPerformancesList_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindPerformancesList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_FindPerformancesList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindPerformancesListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeletePerformances_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePerformances" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeletePerformances_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePerformancesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeletePerformance_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePerformance" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeletePerformance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePerformanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListOfMeets_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListOfMeets" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListOfMeets_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListOfMeetsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ResetPrimaryKeys_InputMessage">
+    <wsdl:part name="parameters" element="tns:ResetPrimaryKeys" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ResetPrimaryKeys_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ResetPrimaryKeysResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AuthenticateUser" message="tns:IService1_AuthenticateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AuthenticateUserResponse" message="tns:IService1_AuthenticateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CreateUser" message="tns:IService1_CreateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CreateUserResponse" message="tns:IService1_CreateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMeet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddMeet" message="tns:IService1_AddMeet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddMeetResponse" message="tns:IService1_AddMeet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindMeetId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/FindMeetId" message="tns:IService1_FindMeetId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/FindMeetIdResponse" message="tns:IService1_FindMeetId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindMeet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/FindMeet" message="tns:IService1_FindMeet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/FindMeetResponse" message="tns:IService1_FindMeet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMeet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteMeet" message="tns:IService1_DeleteMeet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteMeetResponse" message="tns:IService1_DeleteMeet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddBoysTeam">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddBoysTeam" message="tns:IService1_AddBoysTeam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddBoysTeamResponse" message="tns:IService1_AddBoysTeam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindBoysTeam">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/FindBoysTeam" message="tns:IService1_FindBoysTeam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/FindBoysTeamResponse" message="tns:IService1_FindBoysTeam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBoysTeam">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteBoysTeam" message="tns:IService1_DeleteBoysTeam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteBoysTeamResponse" message="tns:IService1_DeleteBoysTeam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddGirlsTeam">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddGirlsTeam" message="tns:IService1_AddGirlsTeam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddGirlsTeamResponse" message="tns:IService1_AddGirlsTeam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindGirlsTeam">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/FindGirlsTeam" message="tns:IService1_FindGirlsTeam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/FindGirlsTeamResponse" message="tns:IService1_FindGirlsTeam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGirlsTeam">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteGirlsTeam" message="tns:IService1_DeleteGirlsTeam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteGirlsTeamResponse" message="tns:IService1_DeleteGirlsTeam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPerformances">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddPerformances" message="tns:IService1_AddPerformances_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddPerformancesResponse" message="tns:IService1_AddPerformances_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPerformance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddPerformance" message="tns:IService1_AddPerformance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddPerformanceResponse" message="tns:IService1_AddPerformance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindPerformancesDictionary">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/FindPerformancesDictionary" message="tns:IService1_FindPerformancesDictionary_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/FindPerformancesDictionaryResponse" message="tns:IService1_FindPerformancesDictionary_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindPerformancesList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/FindPerformancesList" message="tns:IService1_FindPerformancesList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/FindPerformancesListResponse" message="tns:IService1_FindPerformancesList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePerformances">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeletePerformances" message="tns:IService1_DeletePerformances_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeletePerformancesResponse" message="tns:IService1_DeletePerformances_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePerformance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeletePerformance" message="tns:IService1_DeletePerformance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeletePerformanceResponse" message="tns:IService1_DeletePerformance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListOfMeets">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListOfMeets" message="tns:IService1_ListOfMeets_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListOfMeetsResponse" message="tns:IService1_ListOfMeets_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ResetPrimaryKeys">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ResetPrimaryKeys" message="tns:IService1_ResetPrimaryKeys_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ResetPrimaryKeysResponse" message="tns:IService1_ResetPrimaryKeys_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContractResponse" message="tns:IService1_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/AuthenticateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/CreateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMeet">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddMeet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindMeetId">
+      <soap:operation soapAction="http://tempuri.org/IService1/FindMeetId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindMeet">
+      <soap:operation soapAction="http://tempuri.org/IService1/FindMeet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMeet">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteMeet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddBoysTeam">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddBoysTeam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindBoysTeam">
+      <soap:operation soapAction="http://tempuri.org/IService1/FindBoysTeam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBoysTeam">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteBoysTeam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddGirlsTeam">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddGirlsTeam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindGirlsTeam">
+      <soap:operation soapAction="http://tempuri.org/IService1/FindGirlsTeam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGirlsTeam">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteGirlsTeam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPerformances">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddPerformances" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPerformance">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddPerformance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindPerformancesDictionary">
+      <soap:operation soapAction="http://tempuri.org/IService1/FindPerformancesDictionary" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindPerformancesList">
+      <soap:operation soapAction="http://tempuri.org/IService1/FindPerformancesList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePerformances">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeletePerformances" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePerformance">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeletePerformance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListOfMeets">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListOfMeets" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResetPrimaryKeys">
+      <soap:operation soapAction="http://tempuri.org/IService1/ResetPrimaryKeys" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/DMMWCFLib/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

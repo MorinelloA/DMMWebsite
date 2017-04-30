@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c667912c-233d-4095-9427-7d9373ab0dee" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/DMMWCFLib/Service1/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="89e4abb0-bbda-415c-beae-3726e318ed45" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DMMWCFLib/Service1/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="6783b425-ff7b-4c1f-95e9-89b4f5d2746e" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DMMWCFLib/Service1/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="7a3b7b76-7774-44ff-a31f-7c665dc9b6e2" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DMMWCFLib/Service1/mex" />
+    <MetadataFile FileName="DMMLib.xsd" MetadataType="Schema" ID="c8081330-ac2b-4e62-ac7c-042502ef85e4" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DMMWCFLib/Service1/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="20aa4a8a-a31c-4234-a0f2-41ff519d3445" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DMMWCFLib/Service1/mex" />
+    <MetadataFile FileName="DMMWCFLib.xsd" MetadataType="Schema" ID="84402b5e-7d99-4632-9111-d94201c8c642" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DMMWCFLib/Service1/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

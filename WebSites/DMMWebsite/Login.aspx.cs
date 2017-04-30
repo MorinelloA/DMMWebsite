@@ -44,6 +44,7 @@ public partial class Login : System.Web.UI.Page
         //IdentityUser user = userManager.Find(txtUsername.Text, txtPassword.Text);
 
         //Begin Server Code
+        /*Week 6 Implmentation
         TcpClient tcpClient = new TcpClient();
         IPEndPoint endPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 1313);
         tcpClient.Connect(endPoint);
@@ -54,6 +55,11 @@ public partial class Login : System.Web.UI.Page
         CommObj co = new CommObj("AuthenticateUser", (object)userToCheck);
         bf.Serialize(stream, co);
         bool result = (bool)bf.Deserialize(stream);
+        */
+
+        //Week 7 WCF Implementaion
+        ServiceReference3.Service1Client proxy = new ServiceReference3.Service1Client();
+        bool result = proxy.AuthenticateUser(txtUsername.Text, txtPassword.Text);
 
         //If the user exists
         //if (user != null)
