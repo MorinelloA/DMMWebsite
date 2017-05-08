@@ -47,8 +47,21 @@ public partial class Register : System.Web.UI.Page
         */
 
         //Week 7 WCF Implementation
-        ServiceReference3.Service1Client proxy = new ServiceReference3.Service1Client();
-        bool result = proxy.CreateUser(txtUsername.Text, txtPassword.Text);
+        //ServiceReference3.Service1Client proxy = new ServiceReference3.Service1Client();
+        //bool result = proxy.CreateUser(txtUsername.Text, txtPassword.Text);
+
+        //Week 8 Rest
+        WebClient webClient = new WebClient();
+        webClient.QueryString.Add("request", "Create");
+        webClient.QueryString.Add("username", txtUsername.Text);
+        webClient.QueryString.Add("password", txtPassword.Text);
+        //webClient.
+        string resultString = webClient.DownloadString("http://localhost:53686/api/User/");
+        bool result = false;
+        if(resultString == "True" || resultString == "true")
+        {
+            result = true;
+        }
 
         //If success
         if (result)

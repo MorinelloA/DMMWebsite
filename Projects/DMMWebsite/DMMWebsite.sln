@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DMMWCFHost", "DMMWCFHost\DM
 		{A992D199-AF98-41C8-8F5A-4E1365F63F16} = {A992D199-AF98-41C8-8F5A-4E1365F63F16}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DMMRest", "DMMRest\DMMRest.csproj", "{4FD44DDB-B17F-460B-BA86-5D77BD3F67A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{5D18DC48-A01B-4F92-AFA6-31DFB80090B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D18DC48-A01B-4F92-AFA6-31DFB80090B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D18DC48-A01B-4F92-AFA6-31DFB80090B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD44DDB-B17F-460B-BA86-5D77BD3F67A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD44DDB-B17F-460B-BA86-5D77BD3F67A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD44DDB-B17F-460B-BA86-5D77BD3F67A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD44DDB-B17F-460B-BA86-5D77BD3F67A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
